@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajitkumar Verma | .NET Software Engineer</title>
+  <meta name="description" content="Portfolio of Ajitkumar Verma, a .NET Software Engineer with 4+ years building enterprise web apps with ASP.NET Core, Web API, Microservices and SQL Server.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="progress"></div>
+  <div class="bg-fx" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="cursor-glow" id="glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">AV<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-inner">
+      <p class="eyebrow mono">&lt;hello world /&gt;</p>
+      <h1>Hi, I'm <span class="grad">Ajitkumar Verma</span></h1>
+      <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
+      <p class="lead">5+ years building scalable enterprise applications with ASP.NET Core, Microservices and Azure (Functions, Service Bus, Azure SQL) — clean, maintainable and shipped with CI/CD.</p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View my work</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+        <a href="resume.html" class="btn ghost" target="_blank">View / Download CV ↓</a>
+      </div>
+      <p class="hint mono">⚡ Hover a service to light it up — click to fire a new request</p>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="title reveal"><span class="mono">01.</span> About me</h3>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>Experienced .NET Developer with <strong>5+ years</strong> of hands-on experience developing and maintaining enterprise-level web applications using ASP.NET Core, MVC, Web API, C#, LINQ, Entity Framework, SQL Server and Microservices architecture. Currently building new APIs, Azure Functions and Service Bus workflows on Azure for the Macmarts V2 ResourceVue project.</p>
+            <p>Proficient in JavaScript, jQuery, AJAX, Bootstrap and frontend development, with strong CI/CD and version control practices using Azure DevOps and Git. I enjoy collaborating in Agile teams to solve real-world business problems and I'm always eager to learn and deliver high-quality, maintainable code.</p>
+            <p>Exploring new technologies keeps my toolbox growing — and makes me more productive and efficient.</p>
+            <ul class="facts mono">
+              <li>📍 Kurla, Mumbai, India</li>
+              <li>💼 Software Developer @ Rigved Technology Pvt. Ltd.</li>
+              <li>🛒 Current client: Macmarts — V2 ResourceVue</li>
+              <li>🎓 B.Sc. IT — R. J. College</li>
+            </ul>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><b data-count="5" data-suffix="+">0</b><span>Years experience</span></div>
+            <div class="stat"><b data-count="5" data-suffix="+">0</b><span>Major products built</span></div>
+            <div class="stat"><b data-count="3">0</b><span>Companies</span></div>
+            <div class="stat"><b data-count="20" data-suffix="+">0</b><span>Technologies used</span></div>
+          </div>
+        </div>
+
+        <div class="cards3">
+          <div class="card reveal"><div class="ico">⚙️</div><h4>Backend Engineering</h4><p>REST APIs, middleware, JWT security, logging and robust error handling in ASP.NET Core.</p></div>
+          <div class="card reveal"><div class="ico">🧩</div><h4>Microservices</h4><p>Independently deployable services with Dapper-optimised data access and clean boundaries.</p></div>
+          <div class="card reveal"><div class="ico">☁️</div><h4>Azure Cloud</h4><p>Azure Functions, Service Bus messaging and Azure databases powering event-driven services.</p></div>
+          <div class="card reveal"><div class="ico">🚀</div><h4>DevOps &amp; CI/CD</h4><p>Automated build, test and deployment pipelines on Azure DevOps with Git-based workflows.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h3 class="title reveal"><span class="mono">02.</span> Skills &amp; tools</h3>
+        <div class="filters reveal" id="filters">
+          <button class="chip active" data-f="all">All</button>
+          <button class="chip" data-f="lang">Languages</button>
+          <button class="chip" data-f="fw">Frameworks</button>
+          <button class="chip" data-f="fe">Frontend</button>
+          <button class="chip" data-f="cloud">Azure</button>
+          <button class="chip" data-f="db">Database</button>
+          <button class="chip" data-f="tool">Tools</button>
+          <button class="chip" data-f="concept">Concepts</button>
+        </div>
+        <div class="skill-grid" id="skillGrid"></div>
+
+        <div class="bars reveal">
+          <h4>Core strengths</h4>
+          <div class="bar" data-v="92"><label>ASP.NET Core / MVC / Web API</label><i><u></u></i></div>
+          <div class="bar" data-v="90"><label>C# &amp; LINQ</label><i><u></u></i></div>
+          <div class="bar" data-v="85"><label>SQL Server &amp; Dapper</label><i><u></u></i></div>
+          <div class="bar" data-v="82"><label>Azure Functions &amp; Service Bus</label><i><u></u></i></div>
+          <div class="bar" data-v="80"><label>Azure DevOps CI/CD</label><i><u></u></i></div>
+          <div class="bar" data-v="75"><label>JavaScript / jQuery / AJAX</label><i><u></u></i></div>
+        </div>
+
+        <div class="primary-skills reveal">
+          <span>🧠 Problem solving</span><span>📐 Data Structures &amp; Algorithms</span><span>🐞 Testing &amp; Debugging</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h3 class="title reveal"><span class="mono">03.</span> Work experience</h3>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-head"><h4>Software Developer</h4><span class="date mono">Jul 2025 – Present</span></div>
+              <p class="company">Rigved Technology Pvt. Ltd. · Client: Macmarts</p>
+              <h5>V2 ResourceVue</h5>
+              <p>Working on V2 ResourceVue, a resource management service for the Macmarts engagement. I mostly build new backend capabilities: designing and shipping new APIs, event-driven workflows on Azure Functions and Azure Service Bus, Azure database design, and microservices that scale and deploy independently.</p>
+              <ul class="bullets">
+                <li>Create new REST APIs and microservices in .NET for the ResourceVue platform</li>
+                <li>Build serverless background processing with Azure Functions</li>
+                <li>Use Azure Service Bus (queues/topics) for reliable, decoupled messaging between services</li>
+                <li>Design and work with Azure databases for resource and allocation data</li>
+              </ul>
+              <div class="tags"><span>.NET</span><span>Web API</span><span>Azure Functions</span><span>Azure Service Bus</span><span>Azure SQL</span><span>Microservices</span></div>
+            </div>
+          </div>
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-head"><h4>Software Engineer</h4><span class="date mono">Mar 2024 – Jun 2025</span></div>
+              <p class="company">Templetec Infosolutions · Client: Edelweiss</p>
+              <h5>OEMS — Outsource Employee Management System</h5>
+              <p>Engineered a robust platform to manage outsourced employees' complete lifecycle — onboarding, attendance and reporting — using .NET Core, MVC and RESTful Web APIs. Integrated with the internal HRMS for real-time updates and compliance tracking.</p>
+              <h5>ESOP &amp; SAR Management System</h5>
+              <p>Developed enterprise-level ESOP and SAR applications to manage stock grants and performance-based rights. Built with ASP.NET Core Web API in a Microservices architecture so each service deploys independently, with SQL Server + Dapper for lightweight, optimised data access and Azure DevOps CI/CD pipelines.</p>
+              <div class="tags"><span>.NET Core</span><span>MVC</span><span>Web API</span><span>Microservices</span><span>Dapper</span><span>SQL Server</span><span>Azure DevOps</span></div>
+            </div>
+          </div>
+          <div class="t-item reveal">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-head"><h4>Software Developer</h4><span class="date mono">Sep 2021 – Mar 2024</span></div>
+              <p class="company">Equitec Technology for Finance</p>
+              <h5>Dreams Equity Research — Equibase (Microsoft Office Add-ins)</h5>
+              <p>Worked on the base product used by investment and equity research firms. Built Microsoft Office Add-ins (Addin Express), the Control Panel and the Research Portal (ASP.NET MVC). Created a dynamic engine converting Word-based research reports into live web pages, plus a centralized API layer with ASP.NET Web API and Dapper for data sharing across modules.</p>
+              <h5>HRMS Web Application</h5>
+              <p>Developed and maintained high-performance ASP.NET Core MVC applications with Dapper as the data layer. Handled the full SDLC from requirements to deployment, automated deployment/testing with Azure DevOps, and implemented JWT security, error handling and logging. Managed branching and pull requests through Azure Repos.</p>
+              <div class="tags"><span>ASP.NET MVC</span><span>Web API</span><span>Office Add-ins</span><span>JWT</span><span>Azure Repos</span><span>Dapper</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h3 class="title reveal"><span class="mono">04.</span> Featured projects</h3>
+        <div class="proj-grid">
+          <article class="project reveal featured">
+            <span class="badge">Macmarts · Current</span>
+            <h4>V2 ResourceVue</h4>
+            <p>Resource management service built as new APIs and microservices, with Azure Functions for background processing, Azure Service Bus for reliable messaging between services, and Azure databases for data storage.</p>
+            <div class="tags"><span>Azure Functions</span><span>Service Bus</span><span>Azure SQL</span><span>Microservices</span><span>Web API</span></div>
+          </article>
+          <article class="project reveal">
+            <span class="badge">Edelweiss</span>
+            <h4>OEMS</h4>
+            <p>Outsourced employee lifecycle management: onboarding, attendance and reporting with real-time HRMS integration and compliance tracking.</p>
+            <div class="tags"><span>.NET Core</span><span>MVC</span><span>REST</span></div>
+          </article>
+          <article class="project reveal">
+            <span class="badge">Edelweiss</span>
+            <h4>ESOP &amp; SAR Platform</h4>
+            <p>Microservices-based system for stock grants and performance-based rights, deployed independently via Azure DevOps pipelines.</p>
+            <div class="tags"><span>Microservices</span><span>Dapper</span><span>CI/CD</span></div>
+          </article>
+          <article class="project reveal">
+            <span class="badge">Equitec</span>
+            <h4>Equibase Office Add-ins</h4>
+            <p>Add-in suite, control panel and research portal that turns Word research reports into live, dynamic web pages.</p>
+            <div class="tags"><span>ASP.NET MVC</span><span>Office Add-ins</span><span>Web API</span></div>
+          </article>
+          <article class="project reveal">
+            <span class="badge">Equitec</span>
+            <h4>HRMS Web App</h4>
+            <p>High-performance HR platform with JWT security, centralized logging and full SDLC ownership.</p>
+            <div class="tags"><span>ASP.NET Core</span><span>JWT</span><span>Dapper</span></div>
+          </article>
+        </div>
+        <p class="note reveal">Client/enterprise projects — source code is private. Happy to walk through architecture on a call.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION + LEARNING -->
+    <section id="education" class="section">
+      <div class="container">
+        <h3 class="title reveal"><span class="mono">05.</span> Education &amp; learning</h3>
+        <div class="edu-grid">
+          <div class="edu reveal"><span class="year mono">2020</span><h4>B.Sc. Information Technology</h4><p>R. J. College</p></div>
+          <div class="edu reveal"><span class="year mono">2017</span><h4>H.S.C</h4><p>R. J. College</p></div>
+          <div class="edu reveal"><span class="year mono">2015</span><h4>S.S.C</h4><p>Swami Vivekanand Vidhalaya</p></div>
+        </div>
+        <div class="learning reveal">
+          <h4>Currently exploring</h4>
+          <div class="tags big"><span>Cloud-native .NET</span><span>Docker &amp; Kubernetes</span><span>Clean Architecture</span><span>Durable Functions</span><span>System Design</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h3 class="title reveal"><span class="mono">06.</span> Let's work together</h3>
+        <p class="reveal center">Have an opportunity, a project or just want to say hi? My inbox is always open.</p>
+        <div class="contact-cards reveal">
+          <a href="mailto:ajitkumarkurmi1999@gmail.com">✉️ <span>ajitkumarkurmi1999@gmail.com</span></a>
+          <a href="tel:+918652434558">📞 <span>+91 86524 34558</span></a>
+          <a href="tel:+917021810853">📱 <span>+91 70218 10853</span></a>
+          <a href="https://www.linkedin.com/in/ajitkumar-verma-476310240/" target="_blank" rel="noopener">🔗 <span>LinkedIn</span></a>
+        </div>
+        <form class="form reveal" id="contactForm">
+          <input type="text" id="cName" placeholder="Your name" required>
+          <input type="email" id="cEmail" placeholder="Your email" required>
+          <textarea id="cMsg" rows="5" placeholder="Your message" required></textarea>
+          <button class="btn primary" type="submit">Send message</button>
+          <small>Opens your email app with the message pre-filled.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ajitkumar Verma · Built with HTML, CSS &amp; vanilla JS</p>
+  </footer>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
